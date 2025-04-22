@@ -239,3 +239,24 @@ a {
   width: 100%;
   display: inline-block;
 }
+
+/* Input */
+
+.input {
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  padding: 1.5rem 3.5rem;
+  outline: 0;
+  font-size: 2rem;
+  color: var(--color-headings);
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.4rem;
+  }
+}

@@ -6,6 +6,14 @@
   --color-body: #d0ced8;
 }
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -162,4 +170,72 @@ a {
 
 .icon--primary {
   fill: var(--color-primary);
+}
+
+/* Buttons */
+
+.btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 2.5rem 6rem;
+  letter-spacing: 1.5px;
+  border: none;
+  border-radius: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1rem 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: #3a8ffd;
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+.btn--secondary:hover {
+  background: #00c8eb;
+}
+.btn--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.btn--accent:hover {
+  background: #ec3000;
+}
+
+.btn--outline {
+  background: var(--color-headings);
+  color: #fff;
+}
+
+.btn--outline:hover {
+  background: transparent;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+
+.btn--inline {
+  background: transparent;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+
+.btn--inline:hover {
+  background: var(--color-headings);
+  color: #fff;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
 }

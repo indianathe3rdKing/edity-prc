@@ -338,6 +338,10 @@ a {
   color: #fff;
 }
 
+.card--primary .badge--primary {
+  background: #126de4;
+}
+
 .card--secondary .badge--secondary {
   background: #02bbdb;
 }
@@ -348,6 +352,10 @@ a {
 }
 
 /* Plans */
+
+.plan {
+  transition: transform 0.3s;
+}
 
 .plan__name {
   color: #fff;
@@ -371,6 +379,17 @@ a {
   font-weight: 300;
   letter-spacing: 1px;
   display: block;
+}
+
+.plan--popular {
+  transform: scale(1.1);
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+.plan:hover {
+  transform: scale(1.15);
 }
 
 .plan--popular .card__header {
@@ -747,4 +766,16 @@ a {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* Plans block */
+
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 570px;
+  margin: 0 auto;
+  white-space: nowrap;
 }

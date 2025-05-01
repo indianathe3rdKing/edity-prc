@@ -265,9 +265,8 @@ a {
 }
 
 .btn-search {
-  padding: 1.5rem 4rem;
+  /* padding: 1.5rem 4rem; */
   /* width: 17.5rem; */
-
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -285,18 +284,17 @@ a {
 .input {
   border-radius: var(--border-radius);
   border: 1px solid #ccc;
-  padding: 1.5rem 3.5rem;
   outline: 0;
   font-size: 2rem;
+
   color: var(--color-headings);
 }
 
 .input-group {
   border-radius: var(--border-radius);
   border: 1px solid #ccc;
-  display: inline-flex;
+  display: flex;
   margin: 5rem;
-  width: 100%;
 }
 
 .input-group .icon {
@@ -306,8 +304,10 @@ a {
 }
 
 .input-group .input {
+  padding: 1.5rem 4vw;
   border: none;
   flex-grow: 1;
+  width: 0;
 }
 
 .input-group .btn {
@@ -542,6 +542,7 @@ a {
 
 .testimonial {
   padding: 3rem;
+  margin-bottom: 10rem;
 }
 
 .testimonial__image {
@@ -583,11 +584,19 @@ a {
 
 .callout__content {
   text-align: center;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 768px) {
+  .callout {
+    width: 85vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+  }
   .callout .grid--1x2 {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 3fr auto;
   }
   .callout__content {
     text-align: left;
@@ -595,9 +604,14 @@ a {
   .callout .btn {
     justify-self: start;
     margin: 0 2rem;
+    padding: 2rem 3.5rem;
   }
 }
-
+@media screen and (min-width: 1024px) {
+  .callout {
+    width: 60vw;
+  }
+}
 /* Collapsibles */
 
 .collapsible__header {
@@ -695,7 +709,7 @@ a {
 
 .nav__toggler {
   opacity: 0.5;
-  transition: box-shadow 0.2;
+  transition: box-shadow 0.2s;
   cursor: pointer;
 }
 
@@ -764,7 +778,8 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  color: var(--color-headings);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -829,6 +844,7 @@ a {
 
   .block-showcase__image {
     justify-self: end;
+    margin-right: 3rem;
   }
 
   .block-showcase__image > img {
@@ -841,6 +857,7 @@ a {
 
 .footer {
   background: #232323;
+  padding-top: 20rem;
 }
 
 .footer__section {

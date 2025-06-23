@@ -721,6 +721,8 @@ a {
 
 .nav__brand {
   transform: translateY(5px);
+  width: 20rem;
+  height: 5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -872,7 +874,9 @@ a {
 }
 
 .footer__brand {
+  margin: 0 auto;
   margin-top: 5rem;
+
   text-align: center;
 }
 
@@ -892,8 +896,10 @@ a {
 }
 
 .footer__brand img {
-  width: 100%;
   max-width: 230px;
+  position: relative;
+  left: -50%;
+  transform: translate(65%);
 }
 
 @media screen and (min-width: 768px) {
